@@ -1,5 +1,6 @@
 import React from 'react';
 import c from './css.module.css'
+import PropTypes from 'prop-types'
 
 const StatisticComponents =({stats:{label, percentage} = {} }) => {
     return (
@@ -11,5 +12,10 @@ const StatisticComponents =({stats:{label, percentage} = {} }) => {
             
     )
 }
-
+StatisticComponents.propTypes = {
+    stats: PropTypes.shape({
+            label: PropTypes.string,
+            percentage: PropTypes.number
+        })
+}
 export default StatisticComponents;

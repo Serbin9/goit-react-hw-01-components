@@ -14,8 +14,10 @@ const Item =({cartItem:{type, amount, currency} = {} }) => {
     )
 }
 Item.propTypes={
-    type: PropTypes.string,
-    amount: PropTypes.number,
-    currency: PropTypes.string
+    cartItem: PropTypes.shape({
+        type: PropTypes.string,
+        amount: PropTypes.string,
+        currency: PropTypes.string
+    })
 }
 export default Item

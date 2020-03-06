@@ -1,5 +1,6 @@
 import React from 'react'
 import sItem from './sItem.module.css'
+import PropTypes from 'prop-types'
 const FriendsItem = ({avatar, name, isOnline}) => {
     return (
         <li className={sItem.item}>
@@ -9,4 +10,9 @@ const FriendsItem = ({avatar, name, isOnline}) => {
         </li>)
     
 }
+FriendsItem.propTypes ={
+        name: PropTypes.string,
+        isOnline: PropTypes.bool,
+        avatar: PropTypes.string,
+ }
 export default FriendsItem;

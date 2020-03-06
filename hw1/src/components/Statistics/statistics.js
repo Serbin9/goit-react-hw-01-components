@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import style from './Statistics.module.css';
 import statistics from './statistics.json';
 import StatisticComponents from '../Statistics/statisticComponents/statisticComponents';
@@ -21,15 +20,6 @@ Statistic.defaultProps = {
     stats: [],
 };
 
-Statistic.propTypes = {
-    title: PropTypes.string,
-    stats: PropTypes.arrayOf(
-        PropTypes.shape({
-            id: PropTypes.string,
-            label: PropTypes.string,
-            percentage: PropTypes.number
-        })
-    )
-}
+
 
 export default Statistic
