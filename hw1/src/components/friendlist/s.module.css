@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .bg {
+    padding: 40px;
+    background: #eff3f6;
+  }
+
+  .friend__list {
+    list-style: none;
+  }  
+ 
